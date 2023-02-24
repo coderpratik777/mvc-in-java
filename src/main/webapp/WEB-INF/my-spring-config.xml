@@ -6,10 +6,7 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <!-- bean definitions here -->
-    <bean id="hello" class="com.pratiti.component.HelloWorld"/>
-    <bean id="calci" class="com.pratiti.component.Calci"/>
-    
-    <!-- Loading annotated beans -->
-    <context:component-scan base-package="com.pratiti.component"/>
+   
+<!-- here we just write com.pratit all subpackags will be scan--> 
+   <context:component-scan base-package="com.pratiti.controller"/>
 </beans>
